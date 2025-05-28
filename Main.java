@@ -15,12 +15,12 @@ public class Main {
                 return;
             } int num = Integer.parseInt(input);
             if(num>=0 && num<=9) {
-                int gen = BasicsOfJava.generate();
+                int gen = GamePackages.generate();
                 if(num!=gen){
                     int diff = (int) Math.ceil((double)Math.abs(num-gen)/2);
                     switch (diff){
                         case 1:
-                            System.out.println("very close");
+                            System.out.println("very closed");
                             break;
                         case 2:
                             System.out.println("close");
